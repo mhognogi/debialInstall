@@ -1,7 +1,5 @@
 #!/bin/sh
-# First download Arduino zip
-
-echo "start install Arduiono..."
+# First download Arduino zip in /home/yourUser/Downloads
 
 cd ~/Downloads    
 tar -xvf arduino-1.*.tar.xz    
@@ -10,5 +8,4 @@ cd /opt/arduino-1.*.1/
 chmod +x install.sh    
 ./install.sh    
 
-echo "instaled Arduino succes"
 exit
