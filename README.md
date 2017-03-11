@@ -1,2 +1,2 @@
-# debialInstall
- Quick install on linux with .sh
+# debian install
+ Quick install on linux debian with .sh
