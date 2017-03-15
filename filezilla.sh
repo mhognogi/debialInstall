@@ -3,4 +3,6 @@
 
 sudo add-apt-repository ppa:n-muench/programs-ppa  
 sudo apt-get update  
-sudo apt-get install filezilla  
+sudo apt-get install filezilla
+
+filezilla
