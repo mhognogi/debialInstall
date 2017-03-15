@@ -1,7 +1,8 @@
 #!/bin/sh
 #install phpStorm
 
-#prerequisite downloaded PhpStorm from https://www.jetbrains.com/phpstorm/download
+#prerequisite downloaded PhpStorm 
+#from https://www.jetbrains.com/phpstorm/download on Dowload folder
 
 cd ~/Downloads
 sudo tar xf PhpStorm-*.tar.gz -C /opt/
