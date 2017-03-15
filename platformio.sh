@@ -1,4 +1,6 @@
 #!/bin/sh
+#install platformio from atom ide
+
 #prerequisite arduino + git (arduino.sh)
 
 #install atom ide
