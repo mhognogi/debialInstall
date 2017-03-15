@@ -3,6 +3,7 @@
 
 #prerequisite downloaded PhpStorm from https://www.jetbrains.com/phpstorm/download
 
+cd ~/Downloads
 sudo tar xf PhpStorm-*.tar.gz -C /opt/
 cd opt/PhpStorm-*/bin
 ./phpstorm.sh
