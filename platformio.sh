@@ -1,5 +1,5 @@
 #!/bin/sh
-#prerequisite arduino full
+#prerequisite arduino + git (arduino.sh)
 
 #install atom ide
 sudo add-apt-repository ppa:webupd8team/atom
