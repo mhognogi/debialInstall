@@ -14,10 +14,9 @@ chmod +x install.sh
 echo 
 echo "- For continu install:"
 echo " need make some setting in Arduino IDE, after which we will proceed with the installation dependencies on github"
-echo " for contunuu open Arduino IDE and put in Menu File/Prefernces/Additional Board Manager: "
-echo " http://arduino.esp8266.com/stable/package_esp8266com_index.json"
+echo " First open Arduino IDE and put in Menu File/Prefernces/Additional Board Manager: http://arduino.esp8266.com/stable/package_esp8266com_index.json"
 echo " and in Menu Tools/Board/Board Manager click and install package (in my case esp8266 by ESP8266 Community)"
-echo " after close Arduino IDE and press y in terminal"
+echo " after return to terminal and press y"
 echo 
 echo "- For exit to install: press n"
 read pa
