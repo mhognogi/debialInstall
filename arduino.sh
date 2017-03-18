@@ -9,6 +9,8 @@ cd /opt/arduino-1.*.1/
 chmod +x install.sh    
 ./install.sh  
 
+#manual put in: File/Prefernces/Additional Board Manager URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json
+#Arduino IDE Tools/Board/Board Manager and install package (in my case esp8266 by ESP8266 Community)
 read pa
 echo 
 echo "- For continu install"
@@ -19,14 +21,11 @@ echo "and in Menu Tools/Board/Board Manager click and install package (in my cas
 echo "after close Arduino IDE and press y in terminal"
 echo 
 echo "- For exit to install press n"
-#manual put in: File/Prefernces/Additional Board Manager URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json
-#Arduino IDE Tools/Board/Board Manager and install package (in my case esp8266 by ESP8266 Community)
-if [ "$pa" == "y" ]; then
-echo "Continuu with git dependece";
-else
-exit;
+if [ "$pa" != "y" ]; then
+  exit;
 fi
 
+#copy library from git
 cd ~/Arduino
 mkdir hardware
 cd hardware
