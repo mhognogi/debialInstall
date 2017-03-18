@@ -1,7 +1,7 @@
 #!/bin/sh
 #install platformio from atom ide
 
-#prerequisite arduino + git (arduino.sh)
+#prerequisite arduino + git https://github.com/mhognogi/install_on_ubuntu/blob/master/arduino.sh
 
 #install atom ide
 sudo add-apt-repository ppa:webupd8team/atom
