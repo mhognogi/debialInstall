@@ -8,4 +8,4 @@ sudo apt-get install filezilla
 echo "\nFilezilla was installed\n"
 
 #open filezilla
-filezilla
+#filezilla
