@@ -29,3 +29,9 @@ sudo service apache2 restart
 
 #xdebug
 sudo apt-get install php-xdebug
+echo $'\nPlease add in /etc/php/7.0/apache2/php.ini next line\nxdebug.remote_enable=1\nxdebug.remote_host=127.0.0.1\n'
+echo $'xdebug.remote_connect_back=1\nxdebug.remote_port=9000\nxdebug.remote_handler=dbgp\nxdebug.remote_mode=req\n'
+echo $'xdebug.remote_autostart=true\nand save'
+sudo gedit /etc/php/7.0/apache2/php.ini
+
+
