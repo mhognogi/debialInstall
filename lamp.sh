@@ -22,3 +22,7 @@ sudo gedit /etc/apache2/apache2.conf
 echo $'\nPlease include in file apache2.conf: Include /etc/phpmyadmin/apache.conf\n'
 service apache2 restart
 #open localhost/phpmyadmin with root and your pass 
+
+#show error
+echo $'\nedit two line in sudo gedit /etc/php/7.0/apache2/php.ini\ndisplay_errors = on\ndisplay_startup_errors = on\n and save file\n'
+service apache2 restart
