@@ -11,14 +11,12 @@ chmod +x install.sh
 
 #manual put in: File/Prefernces/Additional Board Manager URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json
 #Arduino IDE Tools/Board/Board Manager and install package (in my case esp8266 by ESP8266 Community)
-echo 
-echo "- For continu install:"
-echo " need make some setting in Arduino IDE, after which we will proceed with the installation dependencies on github"
-echo " First open Arduino IDE and put in Menu File/Prefernces/Additional Board Manager: http://arduino.esp8266.com/stable/package_esp8266com_index.json"
-echo " and in Menu Tools/Board/Board Manager click and install package (in my case esp8266 by ESP8266 Community)"
-echo " after return to terminal and press y"
-echo 
-echo "- For exit to install: press n"
+echo $'- For continu install:\n'
+echo $' need make some setting in Arduino IDE, after which we will proceed with the installation dependencies on github\n'
+echo $' First open Arduino IDE and put in Menu File/Prefernces/Additional Board Manager: http://arduino.esp8266.com/stable/package_esp8266com_index.json\n'
+echo $' and in Menu Tools/Board/Board Manager click and install package (in my case esp8266 by ESP8266 Community)\n'
+echo $' after return to terminal and press y\n\n'
+echo $'- For exit to install: press n"
 read pa
 if [ "$pa" != "y" ]; then
   exit;
