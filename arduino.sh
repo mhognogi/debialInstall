@@ -17,6 +17,8 @@ echo $' First open Arduino IDE and put in Menu File/Prefernces/Additional Board 
 echo $' and in Menu Tools/Board/Board Manager click and install package (in my case esp8266 by ESP8266 Community)\n'
 echo $' after return to terminal and press y'
 echo $'- For exit to install: press '
+#open Arduino
+arduino
 read pa
 if [ "$pa" != "y" ]; then
   exit;
