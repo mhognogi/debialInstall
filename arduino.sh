@@ -1,5 +1,5 @@
 #!/bin/sh
-# First download Arduino zip in /home/yourUser/Downloads
+# First download Arduino 1.8.1 (NOT 1.8.2 because have bug) zip in /home/yourUser/Downloads
 
 sudo apt-get update
 cd ~/Downloads    
@@ -14,11 +14,10 @@ chmod +x install.sh
 echo $'- For continu install:'
 echo $' need make some setting in Arduino IDE, after which we will proceed with the installation dependencies on github'
 echo $' First open Arduino IDE and put in Menu File/Prefernces/Additional Board Manager: http://arduino.esp8266.com/stable/package_esp8266com_index.json'
-echo $' and in Menu Tools/Board/Board Manager click and install package (in my case esp8266 by ESP8266 Community)\n'
+echo $' and in Menu Tools/Board/Board Manager click and install package (in my case esp8266 by ESP8266 Community)'
 echo $' after return to terminal and press y'
 echo $'- For exit to install: press '
-#open Arduino
-arduino
+
 read pa
 if [ "$pa" != "y" ]; then
   exit;
@@ -31,3 +30,5 @@ cd hardware
 mkdir esp8266com
 cd esp8266com
 git clone https://github.com/esp8266/Arduino.git esp8266
+
+#IMPORTANT don't foget to make writable ttyUSB0: sudo chmod a+rw /dev/ttyUSB0
