@@ -3,11 +3,11 @@
 
 sudo apt-get update
 cd ~/Downloads    
-tar -xvf arduino-1.*.tar.xz    
-sudo mv arduino-1.* /opt    
-cd /opt/arduino-1.*/    
+tar -xvf arduino-1.8.1-linux64.tar.xz    
+sudo mv arduino-1.8.1 /opt    
+cd /opt/arduino-1.8.1/    
 chmod +x install.sh    
-./install.sh  
+./install.sh   
 
 #manual put in: File/Prefernces/Additional Board Manager URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json
 #Arduino IDE Tools/Board/Board Manager and install package (in my case esp8266 by ESP8266 Community)
