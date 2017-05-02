@@ -37,7 +37,10 @@ sudo gedit /etc/php/7.0/apache2/php.ini
 #for redirect .htaccess
 sudo a2enmod rewrite
 sudo nano /etc/apache2/sites-available/000-default.conf
-#add 3 lines
+#add lines
+#ServerName localhost
+#ServerAdmin webmaster@localhost
+#DocumentRoot /var/www/html/project/public
 #<Directory "/var/www/html">
 #  AllowOverride All
 #</Directory>
