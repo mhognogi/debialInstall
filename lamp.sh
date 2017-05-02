@@ -34,4 +34,10 @@ echo $'xdebug.remote_connect_back=1\nxdebug.remote_port=9000\nxdebug.remote_hand
 echo $'xdebug.remote_autostart=true\nand save'
 sudo gedit /etc/php/7.0/apache2/php.ini
 
+sudo a2enmod rewrite
+sudo nano /etc/apache2/sites-available/000-default.conf
+#add 3 lines
+#<Directory "/var/www/html">
+#  AllowOverride All
+#</Directory>
 
