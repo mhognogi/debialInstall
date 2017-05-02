@@ -40,4 +40,4 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 #<Directory "/var/www/html">
 #  AllowOverride All
 #</Directory>
-
+sudo service apache2 restart
