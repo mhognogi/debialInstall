@@ -32,4 +32,35 @@ open project in phpstorm and work breakpoint
 open in browser may28.dev
 
 //doctrine
-php bin/console doctrine:generate:entity
+nano app/config/parameters.yml  //seting parameters
+php bin/console //help
+php bin/console doctrine:database:create    //create db from parameters.yml
+php bin/console doctrine:generate:entity    //create entity
+php bin/console doctrine:schema:update --force //create table from entity
+/** @Entity */
+class User
+{
+    // ...
+    /**
+     * Many Users have One Address.
+     * @ManyToOne(targetEntity="Address")
+     * @JoinColumn(name="address_id", referencedColumnName="id")
+     */
+    private $address;
+}
+/** @Entity */
+class Address
+{
+    // ...
+}
+||
+CREATE TABLE User (
+    id INT AUTO_INCREMENT NOT NULL,
+    address_id INT DEFAULT NULL,
+    PRIMARY KEY(id)
+);
+CREATE TABLE Address (
+    id INT AUTO_INCREMENT NOT NULL,
+    PRIMARY KEY(id)
+);
+ALTER TABLE User ADD FOREIGN KEY (address_id) REFERENCES Address(id);
