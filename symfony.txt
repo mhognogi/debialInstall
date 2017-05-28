@@ -1,3 +1,4 @@
+//install
 sudo mkdir -p /usr/local/bin
 sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
 sudo chmod a+x /usr/local/bin/symfony
@@ -11,7 +12,6 @@ sudo nano /etc/apache2/sites-available/may28.conf
 <VirtualHost *:80>
     ServerName may28.dev
     DocumentRoot /var/www/may28/web
-
     <Directory /var/www/may28/web>
         AllowOverride All
         Order Allow,Deny
@@ -30,3 +30,6 @@ sudo a2ensite may28.dev
 sudo service apache2 reload
 open project in phpstorm and work breakpoint
 open in browser may28.dev
+
+//doctrine
+php bin/console doctrine:generate:entity
