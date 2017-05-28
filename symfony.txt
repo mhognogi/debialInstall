@@ -1,4 +1,5 @@
 php bin/console cache:clear --env=prod --no-debug   //refresh cash
+$contr = $request->request->get('contr'); //$_POST['contr']
 
 //install
 sudo mkdir -p /usr/local/bin
