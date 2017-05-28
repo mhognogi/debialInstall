@@ -1,3 +1,5 @@
+php bin/console cache:clear --env=prod --no-debug   //refresh cash
+
 //install
 sudo mkdir -p /usr/local/bin
 sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
