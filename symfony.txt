@@ -43,10 +43,10 @@ class User
     // ...
     /**
      * Many Users have One Address.
-     * @ManyToOne(targetEntity="Address")
-     * @JoinColumn(name="address_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Address")
+     * @ORM\JoinColumn(name="address_id", referencedColumnName="id")
      */
-    private $address;
+    private $addressId;
 }
 /** @Entity */
 class Address
