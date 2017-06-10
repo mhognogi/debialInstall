@@ -9,7 +9,6 @@ symfony new may28
 cd may28/
 edit data.time in php.ini //!
 php bin/console server:start //start
-php bin/console server:run  //start
 open in browser localhost:8000
 or virtual host (need work breakpoint in phpstorm)
 sudo nano /etc/apache2/sites-available/may28.conf
