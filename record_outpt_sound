@@ -1,0 +1,3 @@
+sudo add-apt-repository ppa:audio-recorder/ppa
+sudo apt-get -y update
+sudo apt-get install audio-recorder
