@@ -1,3 +1,6 @@
+#!/bin/sh
+#record suond from output sound card
+
 sudo add-apt-repository ppa:audio-recorder/ppa
 sudo apt-get -y update
 sudo apt-get install audio-recorder
