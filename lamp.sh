@@ -4,6 +4,13 @@
 sudo apt-get update
 sudo apt-get -y install mysql-server mysql-client
 sudo apt-get install apache2
+
+#5.6
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install -y php5.6
+
 sudo apt-get -y install php7.0 libapache2-mod-php7.0
 sudo service apache2 restart
 sudo chown -R yourUSER: /var/www
