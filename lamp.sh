@@ -53,3 +53,22 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 #</Directory>
 #sudo gedit /etc/hosts
 sudo service apache2 restart
+
+
+#apache
+apt-get install apache2
+nano /etc/apache2/apache2.conf
+systemctl restart apache2
+#mysql
+sudo apt-get update
+sudo apt-get install mysql-server
+mysql_secure_installation
+systemctl status mysql.service
+#php 5.6
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install -y php5.6
+sudo a2enmod php5.6
+systemctl restart apache2
+
