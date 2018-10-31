@@ -30,7 +30,11 @@ echo $'\nPlease include in file apache2.conf: Include /etc/phpmyadmin/apache.con
 sudo service apache2 restart
 #open localhost/phpmyadmin with root and your pass 
 
-#show error
+#show error 5.6
+#sudo gedit /etc/php/5.6/apache2/php.ini
+# display_errors = on; display_startup_errors = on;
+
+#show error 7
 echo $'\nedit two line in sudo gedit /etc/php/7.0/apache2/php.ini\ndisplay_errors = on\ndisplay_startup_errors = on\n and save file\n'
 sudo service apache2 restart
 
