@@ -27,7 +27,7 @@ service apache2 restart
 #phpMyAdmin
 sudo apt-get -y install phpmyadmin
 sudo gedit /etc/apache2/apache2.conf
-echo $'\nPlease include in file apache2.conf: Include /etc/phpmyadmin/apache.conf\n'
+Include /etc/phpmyadmin/apache.conf\n'
 sudo service apache2 restart
 #open localhost/phpmyadmin with root and your pass 
 
