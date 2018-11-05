@@ -12,12 +12,22 @@ sudo apt-get update
 sudo apt-get install -y php5.6
 sudo apt-get install php5.6-gd php5.6-mysql php5.6-dom php5.6-cli php5.6-json php5.6-common php5.6-mbstring php5.6-opcache php5.6-readline
 
+#7.0
+sudo apt-get update
 sudo apt-get -y install php7.0 libapache2-mod-php7.0
 sudo service apache2 restart
 sudo chown -R yourUSER: /var/www
 sudo apt-cache search php7.0
 sudo apt-get -y install php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache  php7.0-pspell php7.0-recode php7.0-sqlite3 php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-mbstring php-gettext
 sudo service apache2 restart
+
+#7.2
+sudo apt-get install software-properties-common python-software-properties
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install php7.2 php7.2-cli php7.2-common
+sudo apt-get install php7.2-curl php7.2-gd php7.2-json php7.2-mbstring php7.2-intl php7.2-mysql php7.2-xml php7.2-zip
+php -v
 
 #enable ssl
 sudo a2enmod ssl
