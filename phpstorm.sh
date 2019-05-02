@@ -8,3 +8,4 @@ sudo tar xf datagrip-*.tar.gz -C /opt/
 cd /opt/PhpStorm-*/bin
 cd /opt/DataGrip-*/bin
 ./phpstorm.sh
+./datagrip.sh
