@@ -3,9 +3,9 @@
 
 sudo apt-get update
 cd ~/Downloads    
-tar -xvf arduino-1.8.1-linux64.tar.xz    
-sudo mv arduino-1.8.1 /opt    
-cd /opt/arduino-1.8.1/    
+tar -xvf arduino-1.8.11-linux64.tar.xz    
+sudo mv arduino-1.8.11 /opt    
+cd /opt/arduino-1.8.11/    
 chmod +x install.sh    
 ./install.sh   
 
