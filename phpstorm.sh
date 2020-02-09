@@ -1,5 +1,5 @@
 #!/bin/sh
-#install phpStorm from PhpStorm-2017.1.1.tar.gz
+#install phpStorm from PhpStorm-2019*.tar.gz
 
 cd ~/Downloads
 #wget http://download-cf.jetbrains.com/webide/PhpStorm-201*.tar.gz
